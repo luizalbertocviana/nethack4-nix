@@ -7,7 +7,7 @@ This is to build the following source code:
 ## Introduction
 
 I love this game, and I was willing to learn Nix and NixOS basics, so
-it felt convenient to put those toghether and write my first nix
+it felt convenient to put those together and write my first nix
 derivation.
 
 In order to use this, clone it, `cd` into the created directory and
