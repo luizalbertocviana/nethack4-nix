@@ -25,5 +25,7 @@ pkgs.stdenv.mkDerivation {
 
   installPhase = ''
     make install BINDIR=$out
+    mkdir $out/bin
+    ln -s $out/nethack4 $out/bin/nethack4
   '';
 }
