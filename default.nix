@@ -1,5 +1,9 @@
 {
-  pkgs ? import <nixpkgs> {}
+  pkgs ? import (builtins.fetchTarball {
+    name = "nixpkgs-e43cf1748462c81202a32b26294e9f8eefcc3462";
+    url = "https://github.com/nixos/nixpkgs/archive/e43cf1748462c81202a32b26294e9f8eefcc3462.tar.gz";
+    sha256 = "13xvjdbgjgwd5j7ylyy2f590v0s9ha3zj94kl5x1fwasi0dz3ybq";
+  }) {}
 }:
 
 pkgs.stdenv.mkDerivation {
